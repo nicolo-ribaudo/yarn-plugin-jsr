@@ -6,7 +6,11 @@ A Yarn plugin to improve the developer experience when working with JSR.
 
 ### Installation
 
-Run
+Run the following command in your project:
+
+```
+yarn plugin import https://raw.githubusercontent.com/nicolo-ribaudo/yarn-plugin-jsr/main/dist/yarn-plugin-jsr.js
+```
 
 ### Usage
 
