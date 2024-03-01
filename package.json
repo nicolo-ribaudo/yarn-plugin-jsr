@@ -1,0 +1,25 @@
+{
+  "name": "yarn-plugin-jsr",
+  "private": true,
+  "main": "./sources/index.ts",
+  "dependencies": {
+    "@yarnpkg/cli": "^4.0.0",
+    "@yarnpkg/core": "^4.0.0",
+    "clipanion": "^4.0.0-rc.2",
+    "semver": "^7.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/semver": "^7",
+    "@yarnpkg/builder": "^4.0.0",
+    "rimraf": "5.0.0",
+    "typescript": "5.3.0-beta"
+  },
+  "scripts": {
+    "build": "builder build plugin",
+    "build:dev": "builder build plugin --no-minify",
+    "build:dist": "yarn build && cp ./bundles/@yarnpkg/plugin-jsr.js ./dist/yarn-plugin-jsr.js",
+    "clean": "rimraf bundles"
+  },
+  "packageManager": "yarn@4.1.0"
+}
