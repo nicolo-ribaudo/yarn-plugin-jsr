@@ -38,7 +38,7 @@ This plugin adds a `jsr:` protocol to Yarn, which allows you to reference packag
 
 > [!WARNING]
 > The `jsr:` protocol is only supported by Yarn when using this plugin, and it's not supported by npm and pnpm.
-> On publish, it is replaced with an alias `@jsr/<scope>__<name>`,
+> When publishing to npm, it is replaced with an alias to `@jsr/<scope>__<name>`,
 > [as done by JSR itself](https://jsr.io/docs/npm-compatibility#advanced-setup).
 > Users of your package will have to configure the `@jsr` scope to map to `https://npm.jsr.io`, either trough
 > a `.npmrc` file (when using npm, Yarn 1, or pnpm):
