@@ -2,7 +2,8 @@
 
 A Yarn plugin to improve the developer experience when working with JSR.
 
-> **NOTE**: This plugin does not support Yarn 1.
+> [!NOTE]
+> This plugin does not support Yarn 1.
 
 ### Installation
 
@@ -35,6 +36,7 @@ This plugin adds a `jsr:` protocol to Yarn, which allows you to reference packag
 }
 ```
 
-> [!WARNING] The `jsr:` protocol is only supported by Yarn when using this plugin, and it's not supported by npm and pnpm.
+> [!CAUTION]
+> The `jsr:` protocol is only supported by Yarn when using this plugin, and it's not supported by npm and pnpm.
 > If you publish a package containing the `jsr:` protocol in its `dependencies`, users of your package will have to use Yarn
 > with this plugin to install it.
